@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<svg viewBox="140 172 168 106" width="200" height="150" 
+    xmlns="http://www.w3.org/2000/svg">
+    <g class="layer">
+        <g id="svg_18">
+            <path 
+                d="m142,235 l123.1, 0 l-71,-63 l-64,63z" 
+                fill="#d2d1d1" 
+                id="svg_17" 
+                transform="rotate(-90 195.24 226.517)"
+                />
+            <g class="layer" id="svg_3">
+                <rect fill="#d2d1d1" 
+                    height="135" 
+                    id="svg_1" 
+                    width="110"  
+                    x="203" 
+                    y="157"
+                />
+            </g>
+        </g>
+    </g>
+</svg>

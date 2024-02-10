@@ -531,10 +531,23 @@ select::-ms-expand {
   }
 
   .second_section__partners {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-
   .second_section__partners > div {
-    margin-bottom: 10px;
+    width: 47%;
+  }
+  .second_section__partners > div:nth-child(9) {
+    width: 100%;
+  }
+  .second_section__partners > div:nth-child(12) {
+    width: 100%;
+  }
+  .second_section__partners > div:nth-child(15) {
+    width: 100%;
+  }
+  .second_section__partners > div > img {
+    width: 100%;
   }
 }

@@ -221,9 +221,9 @@ select::-ms-expand {
   width: 38%;
   height: 69%;
   padding: 1em;
-  background-color: #000;
+  background-color: #3d3d3d;
   color: #fff;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-out;
 }
 .close {
   align-self: flex-end;
@@ -263,17 +263,39 @@ select::-ms-expand {
   font-size: 20px;
   font-weight: 200;
 }
-.modal-window_managers {
-  height: 19%;
+.modal-window_sales {
+  height: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-.modal-window_managers > h3 {
+.modal-window_sales > h3 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 200;
+}
+.modal-window-btns {
+  display: flex;
+  justify-content: space-around;
+  height: 2em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.modal-window-btns > button {
+  width: 35%;
+}
+.modal-window-btns > button:first-child {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+.modal-window-btns > button:last-child {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fedd2d;
+  border: 1px solid #fedd2d;
 }
 .second_section {
   display: flex;
@@ -297,8 +319,8 @@ select::-ms-expand {
   flex-direction: column;
   justify-content: space-evenly;
   width: 60%;
-  background-color: #000;
-  color: #fff;
+  background-color: #fedd2d;
+  color: #000;
 }
 .second_section_contacts > div {
   margin-left: 12em;
@@ -311,13 +333,9 @@ select::-ms-expand {
   gap: 10px;
   flex-direction: column;
 }
-.second_section_contacts > div > div > a {
-  text-decoration: none;
-  color: #fff;
-}
 .second_section_contacts > div > div > h4 {
   text-transform: uppercase;
-  color: #bfbfbf;
+  color: #000;
   font-size: 20px;
   font-weight: 200;
 }
@@ -328,22 +346,23 @@ select::-ms-expand {
   width: 55%;
   height: 80%;
   margin-left: 2em;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
   border: none;
   text-transform: uppercase;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
 }
 .contacts_web > button:hover {
-  border: 1px solid #fff;
-  background-color: #000;
-  color: #fff;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
 }
 
 @media only screen and (max-width: 1024px) {
   .modal-window {
     width: 37%;
-    height: 63%;
+    height: 62.5%;
   }
   .second_section_contacts > div {
     margin-left: 4em;
@@ -388,10 +407,10 @@ select::-ms-expand {
   .modal-window_mains > p {
     font-size: 10px;
   }
-  .modal-window_managers > h3 {
+  .modal-window_sales > h3 {
     font-size: 16px;
   }
-  .modal-window_managers > p {
+  .modal-window_sales > p {
     font-size: 10px;
   }
   .second_section {
@@ -413,60 +432,82 @@ select::-ms-expand {
   }
 }
 @media only screen and (max-width: 375px) {
-    .header {
-        display: flex;
-        flex-direction: row-reverse;
-      }
-      .burger-menu {
-        display: none;
-      }
-      .about_us {
-        display: none;
-      }
-      .logo-container {
-        width: 100%;
-      }
-      .logo-container::before {
-        display: none;
-      }
-      .modal-window {
-        right: -46%;
-        }
-        .title > h4 {
-            font-size: 8px;
-        }
-        .vimax-bud > p {
-            font-size: 13px;
-        }
-        .vimax-bud > h3 {
-            font-size: 16px;
-        }
-        .sales > h4 {
-            font-size: 22px;
-        }
-        .sales > p {
-            font-size: 12px;
-        }
-        .btns > button {
-            text-transform: uppercase;
-            font-size: 8px;
-            font-weight: 600;
-            height: 25%;
-            width: 80%;
-        }
-        .second_section_contacts {
-            width: 100%;
-        }
-        .second_section_title {
-        display: none;
-        }
-        .second_section_contacts > div {
-            margin-left: 1em;
-        }
-        .second_section_contacts > div > img {
-            width: 2em;
-        }
-        .second_section_contacts > div > div > h4 {
-            font-size: 10px;
-        }
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .first-section {
+    height: 37em;
+  }
+  .container {
+    display: block;
+  }
+  .container-img {
+    width: 100%;
+    height: 46%;
+  }
+  .league-of-masters {
+    width: 100%;
+    height: 20em;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .about_us {
+    display: none;
+  }
+  .logo-container {
+    width: 100%;
+  }
+  .logo-container::before {
+    display: none;
+  }
+  .modal-window {
+    right: -111%;
+    top: 25em;
+    height: 32%;
+    width: 100%;
+  }
+  .title > h4 {
+    font-size: 8px;
+  }
+  .vimax-bud > p {
+    font-size: 13px;
+  }
+  .vimax-bud > h3 {
+    font-size: 16px;
+  }
+  .sales > h4 {
+    font-size: 22px;
+  }
+  .sales > p {
+    font-size: 12px;
+  }
+  .btns > button {
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 600;
+    height: 25%;
+    width: 80%;
+  }
+  .second_section {
+    display: block;
+  }
+  .second_section_contacts {
+    height: 100%;
+    width: 100%;
+  }
+  .second_section_title {
+    width: 100%;
+    height: 5em;
+  }
+  .second_section_contacts > div {
+    margin-left: 1em;
+  }
+  .second_section_contacts > div > img {
+    width: 2em;
+  }
+  .second_section_contacts > div > div > h4 {
+    font-size: 10px;
+  }
 }

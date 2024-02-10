@@ -9,7 +9,7 @@ const onToggleModalMenu = (e) => {
         modal.style.right = '0';
     }
     if(e.target.closest('.close')) {
-        modal.style.right = '-41%';
+        modal.style.right = '-110%';
     }
 }
 

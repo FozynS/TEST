@@ -214,10 +214,12 @@ select::-ms-expand {
 
 .handshake {
   width: 10%;
+  height: 10%;
 }
 
 .percantage {
   width: 7%;
+  height: 10%;
 }
 
 .section__why-we > h4 {
@@ -1108,7 +1110,6 @@ select::-ms-expand {
   .logo-container::before {
     display: none;
   }
-
   .first_section {
     height: 240px;
     width: 100%;
@@ -1119,6 +1120,7 @@ select::-ms-expand {
   .container_description {
     display: none;
   }
+  
   .first_section_moreBtn {
     margin: 0;
     width: 80%;

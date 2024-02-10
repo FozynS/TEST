@@ -23,6 +23,11 @@ select::-ms-expand {
   font-size: 19px;
 }
 
+.burger-menu,
+.menu-button {
+  display: none;
+}
+
 .about_us {
   display: flex;
   align-items: center;
@@ -475,6 +480,53 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about_us:nth-of-type(1) {
+    display: none;
+  }
+
+  .about_us:nth-of-type(2) {
+    width: 40%;
+  }
+
+  .about_us:nth-of-type(2) > li:nth-child(1) {
+    display: none;
+  }
+
+  .about_us:nth-of-type(2) > li:nth-child(2) {
+    display: none;
+  }
+  .menu-button,
+  .menu-button::before {
+    display: block;
+    background-color: #000;
+    border: none;
+    position: relative;
+    height: 10px;
+    width: 40px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    position: relative;
+    left: -6px;
+    content: "";
+    margin-top: 18px;
+    top: 0;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .menu-list {
+    list-style: none;
+  }
   .second_section__partners {
     grid-column-gap: 15px;
     grid-row-gap: 15px;
@@ -486,12 +538,18 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 375px) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .burger-menu {
+    display: none;
+  }
   .about_us {
     display: none;
   }
-
   .logo-container {
-    width: 100%;
+    width: 70%;
   }
 
   .logo-container::before {
@@ -502,6 +560,9 @@ select::-ms-expand {
     height: 200px;
   }
 
+  .about-tiler_text {
+    justify-content: center;
+  }
   .about-tiler_text > h2 {
     font-size: 18px;
   }
@@ -549,5 +610,8 @@ select::-ms-expand {
   }
   .second_section__partners > div > img {
     width: 100%;
+  }
+  .partners-sales {
+    width: 35%;
   }
 }

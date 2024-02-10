@@ -29,6 +29,13 @@ select::-ms-expand {
   display: none;
 }
 
+.menu-button:focus + .burger-menu {
+  right: 0; /* При фокусировке на кнопке смещаем меню обратно на экран */
+}
+.burger-menu:not(:focus-within) {
+  right: -200px;
+}
+
 .about_us {
   display: flex;
   align-items: center;
@@ -596,7 +603,10 @@ select::-ms-expand {
   font-weight: 600;
 }
 
-.categories > div > button {
+.categories > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 2.3em;
   margin-bottom: 15px;
@@ -607,7 +617,7 @@ select::-ms-expand {
   transition: backdrop-filter 0.3s ease-in;
 }
 
-.categories > div > button:hover {
+.categories > div > a:hover {
   cursor: pointer;
   backdrop-filter: blur(5px);
 }
@@ -1312,7 +1322,7 @@ select::-ms-expand {
     grid-area: 2 / 3 / 3 / 4;
   }
 
-  .categories > div > button {
+  .categories > div > a {
     font-size: 10px;
     }
     .categories > div {

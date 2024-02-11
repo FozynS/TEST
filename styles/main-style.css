@@ -1103,7 +1103,7 @@ select::-ms-expand {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .header {
     display: flex;
     flex-direction: row-reverse;
@@ -1198,11 +1198,11 @@ select::-ms-expand {
         }
         
         .section__step-two > img {
-        width: 15%;
+          width: 15%;
             position: relative;
             transform: rotate(-90deg);
-            right: 7%;
-            top: 109%;
+            right: 6%;
+            top: 89%;
         }
         .section__step-three {
         width: 100%;

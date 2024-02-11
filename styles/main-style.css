@@ -29,13 +29,6 @@ select::-ms-expand {
   display: none;
 }
 
-.menu-button:focus + .burger-menu {
-  right: 0; /* При фокусировке на кнопке смещаем меню обратно на экран */
-}
-.burger-menu:not(:focus-within) {
-  right: -200px;
-}
-
 .about_us {
   display: flex;
   align-items: center;
@@ -88,7 +81,7 @@ select::-ms-expand {
   display: block;
   position: relative;
   z-index: 1;
-  top: 110px;
+  top: 106px;
   width: 350px;
   height: 35px;
   background-image: url(/images/subtract.svg);

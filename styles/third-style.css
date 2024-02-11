@@ -71,7 +71,7 @@ select::-ms-expand {
   display: block;
   position: relative;
   z-index: 5;
-  top: 110px;
+  top: 106px;
   width: 350px;
   height: 35px;
   background-image: url(/images/subtract.svg);

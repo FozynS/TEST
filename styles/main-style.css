@@ -1103,7 +1103,7 @@ select::-ms-expand {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 535px) {
   .header {
     display: flex;
     flex-direction: row-reverse;

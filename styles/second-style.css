@@ -608,10 +608,25 @@ select::-ms-expand {
   .second_section__partners > div:nth-child(15) {
     width: 100%;
   }
-  .second_section__partners > div > img {
-    width: 100%;
-  }
   .partners-sales {
     width: 35%;
+  }
+  .second_section__partners > div:nth-child(1) > img {
+    width: 90%;
+  }
+  .second_section__partners > div:nth-child(6) > img {
+    width: 90%;
+  }
+  .second_section__partners > div:nth-child(11) > img {
+    width: 90%;
+  }
+  .second_section__partners > div:nth-child(9) > div:first-child {
+    width: 20%;
+  }
+  .second_section__partners > div:nth-child(12) > div:first-child {
+    width: 20%;
+  }
+  .second_section__partners > div:nth-child(15) > div:first-child {
+    width: 20%;
   }
 }

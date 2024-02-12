@@ -1110,9 +1110,6 @@ select::-ms-expand {
   .logo-container {
     width: 70%;
   }
-  .logo-container::before {
-    display: none;
-  }
   .first_section {
     height: 240px;
     width: 100%;
@@ -1342,6 +1339,11 @@ select::-ms-expand {
   }
 }
 @media only screen and (max-width: 475px) {
+  .logo-container::before {
+    top: 113px;
+    width: 332px;
+    background-image: url(/images/subtract.svg);
+  }
   .fourth_section__benefits > div {
     padding: 0;
     height: 16em;
@@ -1355,6 +1357,11 @@ select::-ms-expand {
   }
 }
 @media only screen and (max-width: 425px) {
+  .logo-container::before {
+    top: 107px;
+    width: 260px;
+    background-image: url(/images/mobile-substract.svg);
+  }
   .fourth_section__benefits > div {
     padding: 0;
     height: 16em;
@@ -1369,6 +1376,11 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 375px) {
+  .logo-container::before {
+    top: 102px;
+    width: 260px;
+    background-image: url(/images/mobile-substract.svg);
+  }
   .fourth_section__benefits > div {
     padding: 0;
     height: 16em;

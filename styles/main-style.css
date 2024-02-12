@@ -15,105 +15,164 @@ a {
 select::-ms-expand {
   display: none;
 }
-
-.header {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 130px;
-  font-size: 19px;
+:root {
+	--font-wix: 'Wix Madefor Display', sans-serif;
+	--font-fish: 'Steelfish Rg', sans-serif;
+	
+	--black: #0D0F1A;
+	--white: #FFFFFF;
+	--gray: #5A6168;
+	--hgray: #EEF0F1;
+	--lgray: #E3E7EA;
+	--elgray: #F6F8F9;
+	--gray-300: #BFC5C8;
+	--yellow: #F9DB4E;
+}
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: var(--white);
+	border-bottom: 1px solid var(--hgray);
+	z-index: 100;
 }
 
-.burger-menu,
-.menu-button {
-  display: none;
+.header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
 }
 
-.about_us {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 500px;
-  height: 40px;
+.header-logo {
+	padding: clamp(1.015625rem, 0.8438rem + 0.8594vw, 1.875rem) clamp(1.375rem, 1.1500rem + 1.1250vw, 2.5rem);
+	background: var(--black);
+	position: relative;
 }
 
-.about_us > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 2px;
-  transition: background-color 0.5s;
+.header-logo a {
+	display: inline-block;
+	max-width: clamp(6.875rem, 5.7500rem + 5.6250vw, 12.5rem);
+	width: 100%;
 }
 
-.about_us > li:hover {
-  background-color: #fedd2d;
+.header-logo a img {
+	width: 100%;
 }
 
-.about_us > li > a {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+.header-logo::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	height: 27px;
+	width: 100%;
+	background: url(https://ligamaistriv.com.ua/wp-content/themes/liga_of_masters/assets3/img/logo_decor.svg) center/cover no-repeat;
 }
 
-.selected {
-  text-transform: uppercase;
-  background-color: #fedd2d;
+.header-left,
+.header-right {
+	width: calc(50% - 130px);
 }
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 350px;
-  height: 130px;
-  background-color: rgb(42 40 46);
+.header-left {
+	padding-right: 100px;
 }
 
-.logo-container > a > img {
-  width: 100%;
+.header-right {
+	padding-left: 100px;
 }
 
-.logo-container::before {
-  content: "";
-  display: block;
-  position: relative;
-  z-index: 1;
-  top: 106px;
-  width: 350px;
-  height: 35px;
-  background-image: url(/images/subtract.svg);
-  background-repeat: no-repeat;
+.header-right .menu-list {
+	justify-content: flex-start;
+	gap: 100px;
 }
 
-.search-container {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 0 4px 7px #b5b5b5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2px;
+.menu-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
 }
 
-.search-icon {
-  width: 70%;
-  height: 70%;
+.menu-link {
+	font-size: clamp(0.875rem, 0.5887rem + 0.4469vw, 1.125rem);
+	font-weight: 600;
+	line-height: 100%;
+	letter-spacing: -0.72px;
+	color: var(--black);
 }
 
-.languages {
-  cursor: pointer;
-  font-weight: 700;
-  border: none;
-  -o-appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.header-lang {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.header-lang a {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 100%;
+	letter-spacing: -0.72px;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+.header-lang a:first-child {
+	padding-right: 8px;
+	border-right: 1px solid var(--lgray);
+}
+
+.header-lang a:last-child {
+	padding-left: 8px;
+}
+
+.header-lang a.current-lang {
+	color: var(--yellow);
+}
+
+.mobile-menu {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	background: var(--white);
+	z-index: 9999;
+	transition: 0.4s ease;
+	transform: translateX(-100%);
+	padding: 150px 24px 40px 24px;
+	z-index: 1;
+}
+
+.mobile-menu.active {
+	transform: translateX(0%);
+}
+
+.mobile-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.mobile-link {
+	padding: 26px 0;
+	border-bottom: 1px solid var(--lgray);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 100%;
+	letter-spacing: -0.72px;
+	display: block;
+	color: var(--black);
+}
+
+.mobile-active {
+	overflow: hidden;
 }
 
 .first_section {

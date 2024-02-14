@@ -16,163 +16,165 @@ select::-ms-expand {
   display: none;
 }
 :root {
-	--font-wix: 'Wix Madefor Display', sans-serif;
-	--font-fish: 'Steelfish Rg', sans-serif;
-	
-	--black: #0D0F1A;
-	--white: #FFFFFF;
-	--gray: #5A6168;
-	--hgray: #EEF0F1;
-	--lgray: #E3E7EA;
-	--elgray: #F6F8F9;
-	--gray-300: #BFC5C8;
-	--yellow: #F9DB4E;
+  --font-wix: "Wix Madefor Display", sans-serif;
+  --font-fish: "Steelfish Rg", sans-serif;
+
+  --black: #0d0f1a;
+  --white: #ffffff;
+  --gray: #5a6168;
+  --hgray: #eef0f1;
+  --lgray: #e3e7ea;
+  --elgray: #f6f8f9;
+  --gray-300: #bfc5c8;
+  --yellow: #f9db4e;
 }
 .site-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: var(--white);
-	border-bottom: 1px solid var(--hgray);
-	z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  border-bottom: 1px solid var(--hgray);
+  z-index: 100;
 }
 
 .header-inner {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .header-logo {
-	padding: clamp(1.015625rem, 0.8438rem + 0.8594vw, 1.875rem) clamp(1.375rem, 1.1500rem + 1.1250vw, 2.5rem);
-	background: var(--black);
-	position: relative;
+  padding: clamp(1.015625rem, 0.8438rem + 0.8594vw, 1.875rem)
+    clamp(1.375rem, 1.15rem + 1.125vw, 2.5rem);
+  background: var(--black);
+  position: relative;
 }
 
 .header-logo a {
-	display: inline-block;
-	max-width: clamp(6.875rem, 5.7500rem + 5.6250vw, 12.5rem);
-	width: 100%;
+  display: inline-block;
+  max-width: clamp(6.875rem, 5.75rem + 5.625vw, 12.5rem);
+  width: 100%;
 }
 
 .header-logo a img {
-	width: 100%;
+  width: 100%;
 }
 
 .header-logo::after {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -20px;
-	height: 27px;
-	width: 100%;
-	background: url(https://ligamaistriv.com.ua/wp-content/themes/liga_of_masters/assets3/img/logo_decor.svg) center/cover no-repeat;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  height: 27px;
+  width: 100%;
+  background: url(https://ligamaistriv.com.ua/wp-content/themes/liga_of_masters/assets3/img/logo_decor.svg)
+    center/cover no-repeat;
 }
 
 .header-left,
 .header-right {
-	width: calc(50% - 130px);
+  width: calc(50% - 130px);
 }
 
 .header-left {
-	padding-right: 100px;
+  padding-right: 100px;
 }
 
 .header-right {
-	padding-left: 100px;
+  padding-left: 100px;
 }
 
 .header-right .menu-list {
-	justify-content: flex-start;
-	gap: 100px;
+  justify-content: flex-start;
+  gap: 100px;
 }
 
 .menu-list {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .menu-link {
-	font-size: clamp(0.875rem, 0.5887rem + 0.4469vw, 1.125rem);
-	font-weight: 600;
-	line-height: 100%;
-	letter-spacing: -0.72px;
-	color: var(--black);
+  font-size: clamp(0.875rem, 0.5887rem + 0.4469vw, 1.125rem);
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.72px;
+  color: var(--black);
 }
 
 .header-lang {
-	display: flex;
-	align-items: center;
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header-lang a {
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 100%;
-	letter-spacing: -0.72px;
-	text-transform: uppercase;
-	color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
 .header-lang a:first-child {
-	padding-right: 8px;
-	border-right: 1px solid var(--lgray);
+  padding-right: 8px;
+  border-right: 1px solid var(--lgray);
 }
 
 .header-lang a:last-child {
-	padding-left: 8px;
+  padding-left: 8px;
 }
 
 .header-lang a.current-lang {
-	color: var(--yellow);
+  color: var(--yellow);
 }
 
 .mobile-menu {
-	position: absolute;
-	top: 0px;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	overflow-y: scroll;
-	background: var(--white);
-	z-index: 9999;
-	transition: 0.4s ease;
-	transform: translateX(-100%);
-	padding: 150px 24px 40px 24px;
-	z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: var(--white);
+  z-index: 9999;
+  transition: 0.4s ease;
+  transform: translateX(-100%);
+  padding: 150px 24px 40px 24px;
+  z-index: 1;
 }
 
 .mobile-menu.active {
-	transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .mobile-list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-link {
-	padding: 26px 0;
-	border-bottom: 1px solid var(--lgray);
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 100%;
-	letter-spacing: -0.72px;
-	display: block;
-	color: var(--black);
+  padding: 26px 0;
+  border-bottom: 1px solid var(--lgray);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.72px;
+  display: block;
+  color: var(--black);
 }
 
 .mobile-active {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .first_section {
@@ -249,7 +251,9 @@ select::-ms-expand {
   border: 0.9px solid rgb(209, 209, 209);
   transition: background-color 0.3s ease;
 }
-
+.second_section > div:nth-child(3) {
+  display: none;
+}
 .second_section > div:hover {
   background-color: #fedd2d;
 }
@@ -273,12 +277,12 @@ select::-ms-expand {
 
 .handshake {
   width: 10%;
-  height: 10%;
+  height: 30%;
 }
 
 .percantage {
   width: 7%;
-  height: 10%;
+  height: 30%;
 }
 
 .section__why-we > h4 {
@@ -427,7 +431,7 @@ select::-ms-expand {
   position: relative;
   top: -9em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 41%;
   height: 9em;
@@ -641,7 +645,7 @@ select::-ms-expand {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  box-shadow: 0 0 0 150px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0 0 0 150px rgba(0, 0, 0, 0.4) inset;
   width: 100%;
   height: 18em;
   background-size: cover;
@@ -685,17 +689,17 @@ select::-ms-expand {
 }
 
 .categories_installer-of-systems {
-  background-image: url(https://img.freepik.com/free-photo/man-an-electrical-technician-working-in-a-switchboard-with-fuses-uses-a-tablet_169016-23786.jpg?size=626&ext=jpg&ga=GA1.1.382665379.1706469034&semt=ais);
+  background-image: url(https://s3-alpha-sig.figma.com/img/5da6/9199/3970e11bd322e06f7576fbf4b2e74b8e?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Q91D~tVIGJd4oG3E3AgY7vy8of2SqN-T9gkMLpuICX5deQQcIfl5i2YungkLJBB-nBlT~SyW7~k8xpsbmN~KKQmavwbeil0Jc6RhB2GfvlCMGvIrxCtEW7DvNRTFrueAjHKjsSCbOR7kksH4SIfIta4l2yKwHlOSRXP-kflmaepeUwRDNIgoKQiPLIvAncIlAYn3L7p2m7HYZQtnJGb29TSGHamZdlJt1JGUanBKU7NhGUcUIj7lrlEuHFyQtPxV~4eh0r2DuZkKSVzxHsw5nzbN1rQQLse6DS-32-jGVMpSgaIonxrvuvrP7wmKVh4HiM3FYEfgL3WIunlXRPMpiQ__);
   grid-area: 1 / 3 / 2 / 4;
 }
 
 .categories_electrician {
-  background-image: url(https://img.freepik.com/free-photo/man-an-electrical-technician-working-in-a-switchboard-with-fuses-installation-and-connection-of-electrical-equipment-close-up_169016-5077.jpg?size=626&ext=jpg&ga=GA1.1.382665379.1706469034&semt=sph);
+  background-image: url(https://s3-alpha-sig.figma.com/img/ea2d/66c3/430f952b72cd20c576bae384fb050baf?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SsA429hiYERxpz8TddBU27UqnbJOtKhJoyhu7JvljeF1PYqVhfnfo1gaTvg0Vfg2yZ4Y4fQYhsQzCtRQKzUuLk8jTE-QGAwmjJT6D12Pj5AI6griGJt1Gumsql0OzPzgNZiokXEgZL27kECEofK30HKVEAHA3wdfgiDF4nI93zcYxyKNrGLF-EARhZ7Nne7vUqkLsngf~qHtsKWyLRxAR79MymmdshUGT3-qr9H6qQhSiNijGuLRHTMG6RWAP1jENiTXPASAgZmSn0j3Zph4UUDpQrf9iID3jTVBb4qWMv~DsQu3xtbiewv~pxMLlft~etRHrqMSOYafqrS3Kw9XfQ__);
   grid-area: 2 / 1 / 3 / 2;
 }
 
 .categories_general-construction-works {
-  background-image: url(https://img.freepik.com/free-photo/mobile-engineers_1098-15445.jpg?size=626&ext=jpg&ga=GA1.1.382665379.1706469034&semt=ais);
+  background-image: url(https://s3-alpha-sig.figma.com/img/b926/ee7a/bca941d8dd3fd22ffb81399a58223f0d?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ikTmsw47OcWQ5ghvqdnWXtOfc47plgoDjyDA~RxctQOj0gTaadWp8yRnRfvhImoiw8L3hDQRR2wfj1svwS5d-qKuoHKGBfqD~2wVkBFWBiC3fH~vvlQDx5naqHyfwR89UOwH2SazdZ0atS~szXeUZpfNXXjCGxcTD4hm7n6PWAxZ2URdRoK8RC6SW67FZAqU3wdYRB72IYZio0OUKkM-BkxwIZUqyUiUAzSeze49pOK1iWlLIUobHYfsbS3Gm7MXWP9NYSwjSOR6pzpBUntfpW-gAKTR~OxUk2TbaxJ2ewsczqYaS8kgDiD91CNtjazHe3VKTj8af0ZwBBkbFpfRdw__);
   grid-area: 2 / 2 / 3 / 3;
 }
 
@@ -1185,9 +1189,6 @@ select::-ms-expand {
     width: 80%;
     height: 30%;
   }
-  .second_section {
-    width: 100%;
-  }
   .second_section > div:first-child,
   .second_section > div:last-child {
     display: none;
@@ -1245,7 +1246,7 @@ select::-ms-expand {
   }
 
   .step-two_percent > p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .section__step-two > img {
@@ -1259,6 +1260,9 @@ select::-ms-expand {
     width: 100%;
     top: 0;
     padding-left: 1em;
+  }
+  .step-three_buy {
+    width: 100%;
   }
   .step-three_buy > img {
     width: 15%;
@@ -1407,6 +1411,19 @@ select::-ms-expand {
     padding: 0;
     height: 16em;
     width: 13.4em;
+  }
+  .second_section {
+    height: 250px;
+}
+  .second_section > div:nth-child(3) {
+    display: block;
+  }
+  .second_section {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .mobile-div {
+    display: block;
   }
   .section__step-one::after {
     left: -9%;

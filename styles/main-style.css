@@ -277,12 +277,12 @@ select::-ms-expand {
 
 .handshake {
   width: 10%;
-  height: 30%;
+  height: 15%;
 }
 
 .percantage {
   width: 7%;
-  height: 30%;
+  height: 15%;
 }
 
 .section__why-we > h4 {
@@ -1414,7 +1414,7 @@ select::-ms-expand {
   }
   .second_section {
     height: 250px;
-}
+  }
   .second_section > div:nth-child(3) {
     display: block;
   }
@@ -1457,10 +1457,15 @@ select::-ms-expand {
     width: 260px;
     background-image: url(/images/mobile-substract.svg);
   }
+  .fourth_section__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
   .fourth_section__benefits > div {
     padding: 0;
     height: 16em;
-    width: 10.4em;
+    width: 48%;
   }
   .section__step-one::after {
     left: -11%;
@@ -1468,4 +1473,15 @@ select::-ms-expand {
   .section__step-two > img {
     right: 7.1%;
   }
+  .categories > div > p {
+    font-size: 11px;
+  }
 }
+/* .handshake {
+  width: 10%;
+  height: 25%;
+}
+.percantage {
+  width: 7%;
+  height: 25%;
+} */

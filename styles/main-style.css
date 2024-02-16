@@ -1403,6 +1403,30 @@ select::-ms-expand {
   }
 }
 @media only screen and (max-width: 475px) {
+  .second_section > div:nth-child(4) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .second_section > div:nth-child(4) > img {
+    padding: 0;
+  }
+  .handshake {
+    width: 35%;
+    height: 55%;
+  }
+
+  .second_section > div:nth-child(5) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .percantage {
+    width: 15%;
+    height: 30%;
+  }
   .logo-container::before {
     top: 113px;
     width: 332px;
@@ -1498,30 +1522,7 @@ select::-ms-expand {
     width: 90%;
     height: 35%;
   }
-  .second_section > div:nth-child(4) {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .second_section > div:nth-child(4) > img {
-    padding: 0;
-  }
-  .handshake {
-    width: 35%;
-    height: 55%;
-  }
-
-  .second_section > div:nth-child(5) {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .percantage {
-    width: 15%;
-    height: 30%;
-  }
+  
   .section__how-to-use > p {
     font-size: 16px;
   }

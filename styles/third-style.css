@@ -641,3 +641,32 @@ select::-ms-expand {
     font-size: 10px;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .modal-window {
+    top: 23em;
+    height: 27%;
+    width: 90%;
+  }
+  .modal-window_about > h3 {
+    font-size: 12px;
+  }
+  .modal-window_about > p {
+    font-size: 8px;
+  }
+  .modal-window_mains > h3 {
+    font-size: 12px;
+  }
+  .modal-window_mains > p {
+    font-size: 6px;
+  }
+  .modal-window_sales > h3 {
+    font-size: 12px;
+  }
+  .modal-window_sales > p {
+    font-size: 12px;
+  }
+  .modal-window-btns {
+    margin-bottom: 1em;
+  }
+}

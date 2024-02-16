@@ -1,16 +1,16 @@
 "use strict";
-const wrapper = document.querySelector('.container');
+const wrapper = document.querySelectorAll(".container")[1];
 
 const onToggleModalMenu = (e) => {
-    console.log(e.target.closest('#about-btn'));
-    const modal = document.querySelector('.modal-window');
+    const modal = document.querySelector(".modal-window");
 
-    if(e.target.closest('#about-btn')) {
-        modal.style.right = '0';
+    if (e.target.closest("#about-btn")) {
+    console.log("Click event fired!");
+    modal.style.right = "0";
     }
-    if(e.target.closest('.close')) {
-        modal.style.right = '-110%';
+    if (e.target.closest(".close")) {
+    modal.style.right = "-110%";
     }
-}
+};
 
-wrapper.addEventListener('click', onToggleModalMenu);
+wrapper.addEventListener("click", onToggleModalMenu);

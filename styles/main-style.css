@@ -186,6 +186,7 @@ select::-ms-expand {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin-top: 50px;
 }
 
 .first_section__container {
@@ -1473,8 +1474,20 @@ select::-ms-expand {
   .section__step-two > img {
     right: 7.1%;
   }
+  .categories > div {
+    justify-content: center;
+  }
   .categories > div > p {
+    font-size: 16px;
+  }
+  .categories > div:nth-child(5) > p {
     font-size: 11px;
+  }
+  .second_section > div:nth-child(4) {
+    height: 25%;
+  }
+  .second_section > div:nth-child(5) {
+    height: 25%;
   }
 }
 /* .handshake {

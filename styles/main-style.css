@@ -1432,10 +1432,15 @@ select::-ms-expand {
     width: 332px;
     background-image: url(/images/subtract.svg);
   }
+  .fourth_section__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
   .fourth_section__benefits > div {
     padding: 0;
     height: 16em;
-    width: 13.4em;
+    width: 48%;
   }
   .second_section {
     height: 250px;
@@ -1487,11 +1492,6 @@ select::-ms-expand {
     width: 260px;
     background-image: url(/images/mobile-substract.svg);
   }
-  .fourth_section__benefits > div {
-    padding: 0;
-    height: 16em;
-    width: 11.6em;
-  }
   .section__step-one::after {
     left: -10%;
   }
@@ -1505,16 +1505,6 @@ select::-ms-expand {
     top: 102px;
     width: 260px;
     background-image: url(/images/mobile-substract.svg);
-  }
-  .fourth_section__benefits {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2em;
-  }
-  .fourth_section__benefits > div {
-    padding: 0;
-    height: 16em;
-    width: 48%;
   }
   .section__step-one::after {
     left: -11%;

@@ -1416,7 +1416,10 @@ select::-ms-expand {
     width: 35%;
     height: 55%;
   }
-
+  .first_section_moreBtn {
+    width: 90%;
+    height: 35%;
+  }
   .second_section > div:nth-child(5) {
     display: flex;
     flex-direction: row-reverse;
@@ -1526,10 +1529,6 @@ select::-ms-expand {
 @media only screen and (max-width: 320px) {
   .first_section__container {
     justify-content: space-between;
-  }
-  .first_section_moreBtn {
-    width: 90%;
-    height: 35%;
   }
 
   .section__how-to-use > p {

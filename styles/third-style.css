@@ -175,7 +175,7 @@ select::-ms-expand {
   overflow: hidden;
 }
 .first-section {
-  margin-top: 50px;
+  margin-top: 70px;
   height: 600px;
 }
 .container {
@@ -291,7 +291,7 @@ select::-ms-expand {
 }
 .modal-window {
   position: absolute;
-  right: -41%;
+  right: -61%;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -401,7 +401,7 @@ select::-ms-expand {
   color: #000;
 }
 .second_section_contacts > div {
-  margin-left: 12em;
+  margin-left: 4em;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -423,7 +423,7 @@ select::-ms-expand {
 .contacts_web > button {
   width: 55%;
   height: 80%;
-  margin-left: 2em;
+  margin-left: 5em;
   color: #fff;
   background-color: #000;
   border: none;
@@ -495,9 +495,52 @@ select::-ms-expand {
   .menu-list {
     list-style: none;
   }
+  .first-section {
+    height: 450px;
+    margin-top: 58px;
+  }
+  .league-of-masters {
+    width: 70%;
+  }
+  .vimax-bud > p {
+    font-size: 12px;
+  }
+  .vimax-bud > h3 {
+    font-size: 20px;
+  }
+  .sales > h4 {
+    font-size: 20px;
+  }
+  .sales > p {
+    font-size: 12px;
+  }
+  .btns > button {
+    font-size: 16px;
+    height: 35%;
+    width: 70%;
+  }
+  .second_section_contacts {
+    width: 60%;
+  }
+  .second_section_contacts > div > img {
+    width: 4em;
+  }
+  .second_section_title {
+    width: 70%;
+  }
   .modal-window {
-    width: 36%;
-    height: 41%;
+    height: 46%;
+    width: 50%;
+  }
+  .modal-window-btns > button:first-child {
+    font-size: 13px;
+    width: 45%;
+    height: 150%;
+  }
+  .modal-window-btns > button:last-child {
+    width: 45%;
+    height: 150%;
+    font-size: 13px;
   }
   .about_us:nth-of-type(1) {
     display: none;
@@ -513,9 +556,6 @@ select::-ms-expand {
 
   .about_us:nth-of-type(2) > li:nth-child(2) {
     display: none;
-  }
-  .first-section {
-    height: 400px;
   }
   .modal-window_about > h3 {
     font-size: 16px;
@@ -538,19 +578,18 @@ select::-ms-expand {
   .second_section {
     height: 400px;
   }
-  .second_section_contacts > div > img {
-    width: 3em;
-  }
   .second_section_contacts > div > div > h4 {
     font-size: 14px;
   }
+  .contacts_web {
+    flex-wrap: wrap;
+  }
   .contacts_web > button {
-    width: 40%;
-    height: 80%;
-    margin-left: 70px;
+    width: 70%;
+    height: 50%;
   }
   .second_section_title > h4 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 535px) {
@@ -584,12 +623,24 @@ select::-ms-expand {
     width: 100%;
     height: 20em;
   }
-
+  .modal-window_about {
+    gap: 10px;
+  }
+  .modal-window_about > h3 {
+    font-size: 12px;
+  }
+  .modal-window_mains > h3 {
+    font-size: 12px;
+  }
+  .modal-window_sales > h3 {
+    font-size: 12px;
+  }
   .modal-window {
     right: -111%;
-    top: 25em;
-    height: 32%;
+    top: 23.6em;
     width: 100%;
+    height: 32%;
+    padding: 0;
   }
   .title > h4 {
     font-size: 8px;
@@ -644,9 +695,9 @@ select::-ms-expand {
 
 @media only screen and (max-width: 320px) {
   .modal-window {
-    top: 23em;
-    height: 27%;
-    width: 90%;
+    width: 100%;
+    height: 30%;
+    top: 23.6em;
   }
   .modal-window_about > h3 {
     font-size: 12px;
@@ -665,8 +716,5 @@ select::-ms-expand {
   }
   .modal-window_sales > p {
     font-size: 12px;
-  }
-  .modal-window-btns {
-    margin-bottom: 1em;
   }
 }

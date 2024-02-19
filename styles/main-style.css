@@ -204,6 +204,9 @@ select::-ms-expand {
 }
 
 .first_section_moreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 60px;
   background-color: #fedd2d;
   color: #000;
@@ -377,6 +380,7 @@ select::-ms-expand {
   display: flex;
   justify-content: end;
   align-items: center;
+  gap: 10px;
 }
 
 .step-one_store > img {
@@ -398,6 +402,16 @@ select::-ms-expand {
   height: 24em;
   padding: 3em;
   background-color: #d2d1d1;
+}
+.section__step-two::after {
+  content: "";
+  position: relative;
+  transform: rotate(180deg);
+  top: -32%;
+  left: -80%;
+  border-top: 88px solid transparent;
+  border-left: 108px solid #d2d1d1;
+  border-bottom: 88px solid transparent;
 }
 
 .section__step-two > p {
@@ -425,7 +439,7 @@ select::-ms-expand {
 
 .step-two_percent > img {
   margin-bottom: 30px;
-  width: 30%;
+  width: 50%;
 }
 
 .section__step-three {
@@ -450,6 +464,8 @@ select::-ms-expand {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  gap: 10px;
 }
 
 .step-three_buy > img {
@@ -899,6 +915,16 @@ select::-ms-expand {
     border-left: 90px solid #f1f0f0;
     border-bottom: 89px solid transparent;
   }
+  .section__step-two::after {
+    content: "";
+    position: relative;
+    transform: rotate(180deg);
+    top: -22.3%;
+    left: -75%;
+    border-top: 88px solid transparent;
+    border-left: 100px solid #d2d1d1;
+    border-bottom: 88px solid transparent;
+  }
   .section__step-two {
     padding: 1em;
   }
@@ -1059,6 +1085,10 @@ select::-ms-expand {
     border-left: 80px solid #f1f0f0;
     border-bottom: 74px solid transparent;
   }
+  .section__step-two::after {
+    top: -12%;
+    left: -82%;
+  }
   .section__step-two {
     padding: 1em;
   }
@@ -1206,7 +1236,7 @@ select::-ms-expand {
     margin-top: 1em;
   }
   .step-one_store > img {
-    width: 20%;
+    width: 25%;
   }
   .section__step-one::after {
     transform: rotate(90deg);
@@ -1216,8 +1246,26 @@ select::-ms-expand {
     border-left: 50px solid #f1f0f0;
     border-bottom: 64px solid transparent;
   }
+  .section__step-two::after {
+    content: "";
+    position: relative;
+    transform: rotate(90deg);
+    top: 110%;
+    left: 2%;
+    border-top: 48px solid transparent;
+    border-left: 50px solid #d2d1d1;
+    border-bottom: 48px solid transparent;
+  }
   .section__step-one > p {
-    font-size: 70px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .step-one_store > p {
+    font-size: 12px;
+  }
+  .step-one_store {
+    gap: 10px;
+    width: 50%;
   }
   .third_section {
     height: 40em;
@@ -1230,14 +1278,16 @@ select::-ms-expand {
     flex-direction: row-reverse;
   }
   .section__step-two > p {
-    font-size: 60px;
+    font-size: 30px;
+    margin-right: 20px;
   }
   .step-two_percent {
     display: flex;
     margin-right: 30px;
     width: 100%;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 10px;
     margin-top: 0;
   }
 
@@ -1247,7 +1297,7 @@ select::-ms-expand {
   }
 
   .step-two_percent > p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .section__step-two > img {
@@ -1261,20 +1311,29 @@ select::-ms-expand {
     width: 100%;
     top: 0;
     padding-left: 1em;
+    align-self: end;
   }
-  .step-three_buy {
-    width: 100%;
+
+  .step-three_buy > p {
+    font-size: 12px;
   }
   .step-three_buy > img {
-    width: 15%;
+    width: 10%;
   }
   .step-three_buy {
     display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
     align-items: center;
   }
   .section__step-three > p {
-    font-size: 60px;
+    margin-left: 20px;
+    font-size: 30px;
+  }
+  .fourth_section {
+    margin-top: 40px;
+    height: 40em;
   }
   .fourth_section__benefits {
     display: grid;
@@ -1291,6 +1350,13 @@ select::-ms-expand {
   }
   .fourth_section__text {
     width: 90%;
+  }
+  .section_what__you-get > h3 {
+    font-size: 20px;
+  }
+  .section_what__you-get > p {
+    font-size: 12px;
+    margin-top: 5px;
   }
   .section_big-partners {
     height: 15em;
@@ -1311,6 +1377,9 @@ select::-ms-expand {
     font-size: 21px;
   }
   .fourth_section__descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 14px;
   }
   .section_big-partners:hover .fourth_section__img {
@@ -1320,7 +1389,9 @@ select::-ms-expand {
   .section_economy:hover .fourth_section__img {
     transform: none;
   }
-
+  .section_loyalty > img {
+    width: 5em;
+  }
   .section_loyalty:hover .fourth_section__img {
     transform: none;
   }

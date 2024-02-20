@@ -214,6 +214,7 @@ select::-ms-expand {
 }
 
 .about-tiler_text > p {
+  text-align: center;
   margin-bottom: 35%;
 }
 

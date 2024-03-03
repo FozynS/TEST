@@ -561,6 +561,7 @@ select::-ms-expand {
 
 .section_big-partners:hover .big-partners__text {
   display: flex;
+  text-align: start;
   align-items: start;
   transform: translate(-30px, 80px);
   filter: brightness(0%) grayscale(100%) invert(100%);
@@ -568,6 +569,7 @@ select::-ms-expand {
 
 .section_economy:hover .economy__text {
   display: flex;
+  text-align: start;
   align-items: end;
   transform: translate(320px, -40px);
   filter: brightness(0%) grayscale(100%) invert(100%);
@@ -575,6 +577,7 @@ select::-ms-expand {
 
 .section_loyalty:hover .loayalty__text {
   display: flex;
+  text-align: start;
   align-items: start;
   transform: translate(-20px, 40px);
   filter: brightness(0%) grayscale(100%) invert(100%);
@@ -582,6 +585,7 @@ select::-ms-expand {
 
 .section_service:hover .service__text {
   display: flex;
+  text-align: start;
   align-items: start;
   transform: translate(-180px, 30px);
   filter: brightness(0%) grayscale(100%) invert(100%);

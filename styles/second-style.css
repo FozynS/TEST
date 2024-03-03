@@ -290,12 +290,14 @@ select::-ms-expand {
   align-items: center;
   align-self: end;
   background-color: #fedd2d;
-  width: 20%;
-  height: 20%;
+  width: 25%;
+  height: 15%;
+  font-weight: 600;
 }
 
 .partners-sales > span {
   color: #959595;
+  font-weight: 400;
 }
 
 .partners-div-1 {
@@ -366,13 +368,14 @@ select::-ms-expand {
   width: 100%;
   height: 35%;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin-bottom: 20px;
 }
 
 .partners-name > h4 {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+  height: 30px;
 }
 
 .partners-name > button {
@@ -647,10 +650,11 @@ select::-ms-expand {
     width: 12%;
   }
   .partners-sales {
-    width: 40%;
+    width: 50%;
+    height: 10%;
   }
   .partners-name > h4 {
-    font-size: 7px;
+    font-size: 10px;
   }
   .footer {
     display: none;
@@ -742,20 +746,8 @@ select::-ms-expand {
   .second_section__partners > div > img {
     width: 200px;
   }
-  .partners-name > h4 {
-    font-size: 12px;
-  }
   .partners-sales {
     width: 35%;
-  }
-  .second_section__partners > div:nth-child(8) > div:last-child {
-    margin-bottom: 20px;
-  }
-  .second_section__partners > div:nth-child(2) > div > h4 {
-    font-size: 10px;
-  }
-  .second_section__partners > div:nth-child(4) > div > h4 {
-    font-size: 10px;
   }
   .second_section__partners > div:nth-child(5) > div:first-child {
     width: 35%;
@@ -763,62 +755,14 @@ select::-ms-expand {
   .second_section__partners > div:nth-child(6) > div:first-child {
     width: 35%;
   }
+  .second_section__partners > div:nth-child(11) > div:first-child {
+    width: 35%;
+  }
   .second_section__partners > div:nth-child(6) {
     width: 47%;
   }
-  .second_section__partners > div:nth-child(6) > div > h4 {
-    font-size: 10px;
-  }
-  .second_section__partners > div:nth-child(8) > div > h4 {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 10px;
-  }
   .second_section__partners > div:nth-child(11) {
     width: 47%;
-  }
-  .second_section__partners > div:nth-child(11) > div > h4 {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 10px;
-  }
-  .second_section__partners > div:nth-child(11) > div:first-child {
-    width: 35%;
-    height: 16%;
-  }
-  .second_section__partners > div:nth-child(11) > div:last-child {
-    margin-bottom: 14px;
-  }
-  .second_section__partners > div:nth-child(11) > div:last-child > button {
-    height: 35%;
-  }
-  .second_section__partners > div:nth-child(13) > div > h4 {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 10px;
-  }
-  .second_section__partners > div:nth-child(14) > div:first-child {
-    width: 35%;
-    height: 18%;
-  }
-  .second_section__partners > div:nth-child(14) > div:last-child {
-    margin-bottom: 15px;
-  }
-  .second_section__partners > div:nth-child(14) > div:last-child > button {
-    height: 40%;
-  }
-  .second_section__partners > div:nth-child(14) > div > h4 {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 10px;
   }
   .second_section__partners > div:nth-child(9) > div:first-child {
     width: 20%;
@@ -832,67 +776,17 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 475px) {
-  .partners-name > h4 {
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  .second_section__partners > div:nth-child(6) > div:last-child {
-    height: 31%;
-  }
-  .second_section__partners > div:nth-child(11) > div:last-child {
-    height: 32%;
-  }
-  .second_section__partners > div:nth-child(8) > div > h4 {
-    font-size: 8px;
-  }
-  .second_section__partners > div:nth-child(11) > div > h4 {
-    font-size: 6px;
-  }
-  .second_section__partners > div:nth-child(13) > div > h4 {
-    font-size: 7px;
-  }
-  .second_section__partners > div:nth-child(14) > div > h4 {
-    font-size: 8px;
-  }
   .partners-name > button {
     font-size: 10px;
   }
   .second_section__partners > div {
     width: 47%;
   }
-  .second_section__partners > div:nth-child(2) > div > h4 {
-    font-size: 8px;
-  }
   .second_section__partners > div:nth-child(5) {
     width: 47%;
   }
-  .second_section__partners > div:nth-child(5) > div:first-child {
-    width: 35%;
-  }
   .second_section__partners > div:nth-child(6) {
     width: 47%;
-  }
-  .second_section__partners > div:nth-child(6) > div:first-child {
-    width: 35%;
-  }
-  .second_section__partners > div:nth-child(6) > div:last-child {
-    height: 35%;
-  }
-  .second_section__partners > div:nth-child(8) > div > h4 {
-    font-size: 7px;
-  }
-  .second_section__partners > div:nth-child(11) {
-    width: 47%;
-  }
-  .second_section__partners > div:nth-child(11) > div:last-child {
-    height: 35%;
-  }
-  .second_section__partners > div:nth-child(11) > div:first-child {
-    width: 35%;
-  }
-  .second_section__partners > div:nth-child(14) > div > h4 {
-    font-size: 7px;
   }
   .second_section__partners > div > img {
     width: 170px;
@@ -900,14 +794,14 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 320px) {
-  .partners-name > h4 {
-    font-size: 10px;
-  }
   .partners-sales {
     width: 45%;
   }
   .second_section__partners > div {
     width: 46%;
+  }
+  .second_section__partners > div > img {
+    width: 100px;
   }
   .second_section__partners > div:nth-child(6) {
     width: 45%;
@@ -921,25 +815,5 @@ select::-ms-expand {
   .second_section__partners > div:nth-child(11) > div:first-child {
     width: 45%;
   }
-  .second_section__partners > div:nth-child(2) > div > h4 {
-    font-size: 7px;
-  }
-  .second_section__partners > div:nth-child(4) > div > h4 {
-    font-size: 9px;
-  }
-  .second_section__partners > div:nth-child(6) > div > h4 {
-    font-size: 8px;
-  }
-  .second_section__partners > div:nth-child(8) > div > h4 {
-    font-size: 6px;
-  }
-  .second_section__partners > div:nth-child(11) > div > h4 {
-    font-size: 5px;
-  }
-  .second_section__partners > div:nth-child(13) > div > h4 {
-    font-size: 6px;
-  }
-  .second_section__partners > div:nth-child(14) > div > h4 {
-    font-size: 6px;
-  }
+
 }

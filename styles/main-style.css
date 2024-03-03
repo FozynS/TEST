@@ -228,7 +228,7 @@ select::-ms-expand {
 
 .container_title {
   margin-bottom: 15px;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -338,13 +338,13 @@ select::-ms-expand {
 }
 
 .section__how-to-use > h2 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 400;
   color: #ffda09;
 }
 
-.section__how-to-use > p {
-  font-size: 30px;
+.section__how-to-use > h1 {
+  font-size: 36px;
   font-weight: 700;
 }
 
@@ -480,6 +480,8 @@ select::-ms-expand {
 
 .fourth_section__text {
   display: flex;
+  gap: 5px;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -501,13 +503,13 @@ select::-ms-expand {
 }
 
 .section_what__you-get > h3 {
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 600;
 }
 
 .section_what__you-get > p {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -637,13 +639,13 @@ select::-ms-expand {
 
 .fifth_section__title > p {
   color: #fedd2d;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .fifth_section__title > h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -898,7 +900,15 @@ select::-ms-expand {
   display: flex;
   gap: 10px;
 }
-
+@media only screen and (min-width: 1600px){
+  .section__step-one::after {
+    left: 19%
+  }
+  .section__step-two::after {
+    top: -34%;
+    left: -78%;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .header {
     font-size: 14px;
@@ -1418,7 +1428,7 @@ select::-ms-expand {
   .section__how-to-use > h2 {
     font-size: 14px;
   }
-  .section__how-to-use > p {
+  .section__how-to-use > h1 {
     font-size: 20px;
   }
   .fifth_section {
@@ -1582,7 +1592,7 @@ select::-ms-expand {
   .first_section__container {
     justify-content: space-between;
   }
-  .section__how-to-use > p {
+  .section__how-to-use > h1 {
     font-size: 16px;
   }
   .section__step-one > p {

@@ -680,6 +680,7 @@ select::-ms-expand {
   text-transform: uppercase;
   font-size: 21px;
   font-weight: 600;
+  text-align: center;
 }
 
 .categories > div > a {

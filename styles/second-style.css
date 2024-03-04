@@ -208,6 +208,7 @@ select::-ms-expand {
 }
 
 .about-tiler_text > h2 {
+  text-transform: uppercase;
   font-size: 38px;
   font-weight: 600;
   margin-bottom: 5%;
@@ -790,6 +791,11 @@ select::-ms-expand {
   }
   .second_section__partners > div > img {
     width: 170px;
+  }
+}
+@media only screen and (max-width: 375px){
+  .second_section__partners > div > img {
+    width: 150px;
   }
 }
 

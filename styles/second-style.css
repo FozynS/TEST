@@ -272,7 +272,7 @@ select::-ms-expand {
   justify-content: space-between;
   align-items: center;
   height: 15em;
-  background-color: #b5b5b5;
+  background-color: #F8F8F8;
 }
 .second_section__partners > div > img {
   object-fit: contain;
@@ -383,8 +383,11 @@ select::-ms-expand {
   height: 45%;
   width: 70%;
   text-transform: uppercase;
+  font-weight: 600;
   transition: all 0.4s ease-in;
   border: 1px solid #000;
+  background: transparent;
+  color: #000;
 }
 
 .partners-name > button:hover {

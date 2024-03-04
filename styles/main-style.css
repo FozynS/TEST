@@ -712,17 +712,17 @@ select::-ms-expand {
 }
 
 .categories_installer-of-systems {
-  background-image: url(https://s3-alpha-sig.figma.com/img/5da6/9199/3970e11bd322e06f7576fbf4b2e74b8e?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Q91D~tVIGJd4oG3E3AgY7vy8of2SqN-T9gkMLpuICX5deQQcIfl5i2YungkLJBB-nBlT~SyW7~k8xpsbmN~KKQmavwbeil0Jc6RhB2GfvlCMGvIrxCtEW7DvNRTFrueAjHKjsSCbOR7kksH4SIfIta4l2yKwHlOSRXP-kflmaepeUwRDNIgoKQiPLIvAncIlAYn3L7p2m7HYZQtnJGb29TSGHamZdlJt1JGUanBKU7NhGUcUIj7lrlEuHFyQtPxV~4eh0r2DuZkKSVzxHsw5nzbN1rQQLse6DS-32-jGVMpSgaIonxrvuvrP7wmKVh4HiM3FYEfgL3WIunlXRPMpiQ__);
+  background-image: url(../images/categories/Категорія3.png);
   grid-area: 1 / 3 / 2 / 4;
 }
 
 .categories_electrician {
-  background-image: url(https://s3-alpha-sig.figma.com/img/ea2d/66c3/430f952b72cd20c576bae384fb050baf?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SsA429hiYERxpz8TddBU27UqnbJOtKhJoyhu7JvljeF1PYqVhfnfo1gaTvg0Vfg2yZ4Y4fQYhsQzCtRQKzUuLk8jTE-QGAwmjJT6D12Pj5AI6griGJt1Gumsql0OzPzgNZiokXEgZL27kECEofK30HKVEAHA3wdfgiDF4nI93zcYxyKNrGLF-EARhZ7Nne7vUqkLsngf~qHtsKWyLRxAR79MymmdshUGT3-qr9H6qQhSiNijGuLRHTMG6RWAP1jENiTXPASAgZmSn0j3Zph4UUDpQrf9iID3jTVBb4qWMv~DsQu3xtbiewv~pxMLlft~etRHrqMSOYafqrS3Kw9XfQ__);
+  background-image: url(../images/categories/Категорія4.png);
   grid-area: 2 / 1 / 3 / 2;
 }
 
 .categories_general-construction-works {
-  background-image: url(https://s3-alpha-sig.figma.com/img/b926/ee7a/bca941d8dd3fd22ffb81399a58223f0d?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ikTmsw47OcWQ5ghvqdnWXtOfc47plgoDjyDA~RxctQOj0gTaadWp8yRnRfvhImoiw8L3hDQRR2wfj1svwS5d-qKuoHKGBfqD~2wVkBFWBiC3fH~vvlQDx5naqHyfwR89UOwH2SazdZ0atS~szXeUZpfNXXjCGxcTD4hm7n6PWAxZ2URdRoK8RC6SW67FZAqU3wdYRB72IYZio0OUKkM-BkxwIZUqyUiUAzSeze49pOK1iWlLIUobHYfsbS3Gm7MXWP9NYSwjSOR6pzpBUntfpW-gAKTR~OxUk2TbaxJ2ewsczqYaS8kgDiD91CNtjazHe3VKTj8af0ZwBBkbFpfRdw__);
+  background-image: url(../images/categories/Категорія5.png);
   grid-area: 2 / 2 / 3 / 3;
 }
 
@@ -959,8 +959,6 @@ select::-ms-expand {
   .footer {
     padding: 2em;
   }
-}
-@media only screen and (max-width: 1024px) {
   .section_big-partners:hover .fourth_section__img {
     transform: translate(60px, -110px);
     filter: brightness(0%) grayscale(100%) invert(100%);
@@ -1361,7 +1359,7 @@ select::-ms-expand {
   }
   .fourth_section__benefits > div {
     padding: 0;
-    width: 15.5em;
+    width: 100%;
   }
   .section_big-partners {
     height: 18em;
@@ -1518,10 +1516,6 @@ select::-ms-expand {
     width: 332px;
     background-image: url(/images/subtract.svg);
   }
-  .fourth_section__benefits > div {
-    padding: 0;
-    width: 13.5em;
-  }
   .second_section {
     height: 250px;
   }
@@ -1562,10 +1556,6 @@ select::-ms-expand {
   .section__step-two > img {
     right: 6.3%;
   }
-  .fourth_section__benefits > div {
-    padding: 0;
-    width: 12em;
-  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -1585,10 +1575,6 @@ select::-ms-expand {
   }
   .second_section > div:nth-child(5) {
     height: 25%;
-  }
-  .fourth_section__benefits > div {
-    padding: 0;
-    width: 10.5em;
   }
 }
 
@@ -1642,9 +1628,5 @@ select::-ms-expand {
   }
   .loayalty__text > p {
     font-size: 10px;
-  }
-  .fourth_section__benefits > div {
-    padding: 0;
-    width: 9em;
   }
 }

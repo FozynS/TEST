@@ -933,7 +933,7 @@ select::-ms-expand {
     content: "";
     position: relative;
     transform: rotate(180deg);
-    top: -22.3%;
+    top: -34%;
     left: -75%;
     border-top: 88px solid transparent;
     border-left: 100px solid #d2d1d1;
